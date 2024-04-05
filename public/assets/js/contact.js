@@ -10,13 +10,16 @@ const addContact = async () => {
         console.log(res.data);
         if(res.status===400){
             alert("Submission Failed");
+            window.location.href="/contact.html"
         }
         else{
             alert("Form Submitted");
+            window.location.href="/contact.html"
         }
     }catch(error){
         console.log(error);
         alert("Submission Failed");
+        window.location.href="/contact.html"
     }
 }
 
